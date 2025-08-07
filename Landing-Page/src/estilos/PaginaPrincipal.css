@@ -1,0 +1,69 @@
+/* Fondo de la página */
+.fondo-jujuy {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/Jujuy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+  
+  /* Contenedor de las tarjetas */
+  .contenedor-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Muestra las cards en fila */
+    padding: 2rem;
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Cada columna de tarjeta */
+  .card-col {
+    flex: 1;
+    max-width: 25%; /* 4 cards por fila */
+    height: auto;
+  }
+  
+  /* Tarjeta en sí */
+  /*.card-container {
+    position: relative;
+    width: 100%;
+    height: 500px !important;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }*/
+
+  .card-container {
+    height: 450px !important;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Imagen de la tarjeta ocupa todo */
+  .card-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Título al pie de la imagen */
+  .card-container .card-body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* fondo oscuro */
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+  }
+  
+  .card-container .card-title {
+    font-weight: bold;
+    margin: 0;
+  }
+  
